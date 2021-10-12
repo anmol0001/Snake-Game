@@ -168,7 +168,7 @@ function gameLoop(){
 
 init();
 
-const id=setInterval(gameLoop,100);
+const id=setInterval(gameLoop,250);
 
 red.addEventListener('click',function(){
     clearInterval(id);
