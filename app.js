@@ -62,28 +62,28 @@ const snake={
            newX=headX+1;
            newY=headY;
 
-           if((newX+1)*cs>=W)
+           if(newX*cs>=W)
            gameOver=true;
        }
        else if(this.direction === "left"){
             newX=headX-1;
             newY=headY;
  
-           if(newX*cs<=0)
+           if(newX*cs<0)
            gameOver=true;
        }
        else if(this.direction === "up"){
             newX=headX;
             newY=headY-1;
             
-           if(newY*cs<=0)
+           if(newY*cs<0)
            gameOver=true;
        }
        else{
             newX=headX;
             newY=headY+1;
             
-           if((newY+1)*cs>=H)
+           if(newY*cs>=H)
            gameOver=true;
        }
 
